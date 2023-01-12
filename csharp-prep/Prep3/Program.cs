@@ -6,6 +6,7 @@ class Program
     {
         Console.Write("What is the magic number?");
         int userinput = int.Parse(Console.ReadLine());
+        
         Random randomGenerator = new Random();
         int number = randomGenerator.Next(1, 101);
     
