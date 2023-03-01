@@ -1,10 +1,10 @@
 using System;
 public class FileLoadRead{
 private string _fileName1 = "journal.txt";
-
+   List<Write1>entrylist = new List<Write1>();
     public void writefile(List<Write1> entrylist){
       string filename = promptfile($"what is the file name?");
-      using (StreamWriter outputFile = new StreamWriter(_fileName1))
+      using (StreamWriter outputFile = new StreamWriter(filename))
       foreach (var entry in entrylist){
         
         outputFile.WriteLine(entry.something());
@@ -14,7 +14,7 @@ private string _fileName1 = "journal.txt";
     public string promptfile(string promptquestion){
       Console.Write(promptquestion);
       string filename = Console.ReadLine();
-      filename = "journal.txt";
+      // filename = "journal.txt";
       return filename;    
     }
 
@@ -22,7 +22,7 @@ private string _fileName1 = "journal.txt";
     {
       string filename = promptfile($"what is the file name?");;
       string[] lines = System.IO.File.ReadAllLines(filename);
-      List<Write1>entrylist = new List<Write1>();
+      // List<Write1>entrylist = new List<Write1>();
 
         foreach (string line in lines)
         {
