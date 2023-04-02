@@ -41,8 +41,9 @@ class Listing : Activity
         DateTime startTime = DateTime.Now;
         while (DateTime.Now < startTime.AddSeconds(_seconds))
         {
-         _entrylist += 1;
          Console.ReadLine();
+         _entrylist += 1;
+         
         }
 
         countDown(5);

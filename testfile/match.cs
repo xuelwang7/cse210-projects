@@ -11,8 +11,11 @@ public class match{
             Console.WriteLine("which team?");
             Console.WriteLine("which team?");
 
-            int winner = Console.ReadLine();
-            if(winner ==1)
+            string winner = Console.ReadLine();
+            if(winner =="1")
+            {
+
+            }
 
             else
             {

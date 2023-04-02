@@ -24,6 +24,7 @@ public class team{
             Console.WriteLine($"wins{_win},{_lost}");
             Console.WriteLine(".....................");
 
+
             foreach(player p in _player) 
             {
                   p.Display();

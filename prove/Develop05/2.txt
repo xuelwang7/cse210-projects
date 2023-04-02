@@ -1,0 +1,3 @@
+Checklist:w,wwwww,10,1,2,20
+simpleGoals:s,sss,10,True
+EternalGoals:e,ee,20
