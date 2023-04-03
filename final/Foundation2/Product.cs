@@ -1,11 +1,11 @@
 public class Product
 {
       private string _name;
-      private int _productId;
+      private string _productId;
       private float _price;
       private int _quantity;
 
-    public Product(string name, int productId, float price, int quantity)
+    public Product(string name, string productId, float price, int quantity)
     {
         _name = name;
         _productId = productId;
@@ -13,9 +13,23 @@ public class Product
         _quantity = quantity;
     }
 
-    public float TotalPrice()
-    {
+    public string getname(){
+
+        return _name;
+    }
+
+    public string getproductId(){
+
+        return _productId;
+    }
+
+    public float getprice(){
+
         return _price * _quantity;
+    }
+
+    public int getquantity(){
+        return  _quantity;
     }
 }
 

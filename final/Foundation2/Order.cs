@@ -1,13 +1,13 @@
 public class Order
 {
       
-      private List<Product> products;
+      List<Product> products = new List<Product>();
       private Customer customer;
       private float ShippingCost;
 
-    public Order(Customer customer)
+    public Order(List<Product> products,Customer customer)
     {
-        this.products = new List<Product>();
+        this.products = products;
         this.customer = customer;
         // this.ShippingCost = Address.IsInUSA();
         
@@ -33,7 +33,7 @@ public class Order
     
     public string s_label()
     {
-        return $"{customer.GetName()}\n{customer.GetAddress().fulladdress()}\n";
+        return $"{customer.GetName()}\n{customer.GetAddress().GetFullAddress()}\n";
     }
     
 
