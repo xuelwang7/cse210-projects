@@ -4,16 +4,19 @@ public class Order
       List<Product> products = new List<Product>();
       private Customer customer;
       private float ShippingCost;
+    //   Datetime _datetime = new DateTime(2023, 11, 16, 12, 30, 45);
 
     public Order(List<Product> products,Customer customer)
     {
         this.products = products;
         this.customer = customer;
+        // this.datetime = datetime;
         // this.ShippingCost = Address.IsInUSA();
         
     }
 
-    public double total(double total = 0){
+    public double total(double total = 0)
+    {
         foreach(Product product in products){
             total+= product.getprice();
         }

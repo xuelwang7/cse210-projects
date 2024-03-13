@@ -1,9 +1,11 @@
 public class Activity
 {
-      public string _introduction = "";
-      public string _inputBreath = "";
+      protected string _introduction = "";
+      protected string _inputBreath = "";
+      protected int _seconds;
 
-      public int _seconds;
+      //to protected for inheritance use
+      
       public virtual void doActivity()
       {
       }
@@ -18,6 +20,7 @@ public class Activity
       public void WaitBreathing(int howLong)
       {
             for (int i =0; i < howLong; i++){
+                  
             // while(true){
                   Console.Write("/");
                   Thread.Sleep(500);

@@ -17,7 +17,7 @@ public class Journal
         }
         _entrylist.Reverse();
         Console.WriteLine();
-        // Console.ReadLine();
+        
     }
     public void Loadentry(List<Write1> entrylist)
     {

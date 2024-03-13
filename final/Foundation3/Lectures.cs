@@ -10,6 +10,9 @@ public class Lectures:Event
       name = "Lectures";
     }
 
-   
+   public override void Details()
+   {
+     Console.WriteLine($"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}");
+   }
 
 }

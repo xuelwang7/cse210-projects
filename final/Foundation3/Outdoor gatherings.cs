@@ -7,6 +7,12 @@ public class Outdoor:Event
       //   this.weather = weather;
     }
 
+
+    public override void Details()
+   {
+    Console.WriteLine($"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{additionalInfo}");
+   }
+
     
 
 }

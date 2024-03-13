@@ -1,11 +1,11 @@
 public class Goals
 {
-     public bool isChecked = false;
-      public string _name;
+     protected bool isChecked = false;
+      protected string _name;
 
-      public string _type;
+      protected string _type;
 
-      public int _point;
+      protected int _point;
 
 
 

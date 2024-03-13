@@ -1,15 +1,15 @@
 public abstract class Event
 {
-  private string Title;
-  private string description; 
-  private DateTime date;
-  private TimeSpan time;
+  protected string Title;
+  protected string description; 
+  protected DateTime date;
+  protected TimeSpan time;
   
-  private Address address;
+  protected Address address;
 
-  private string additionalInfo;
+  protected string additionalInfo;
 
-  private string name;
+  protected string name;
 
 
   public Event(string title, string description, DateTime date, TimeSpan time, Address address,string additionalInfo, string name) 
@@ -24,20 +24,22 @@ public abstract class Event
         this.name = name;
     }
 
-    public string GetStandardDetails() 
-    {
-        return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}";
-    }
+    public abstract void Details();
 
-    public string GetFullDetails()
-    {
-      return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{additionalInfo}";
-    }
+    // public string GetStandardDetails() 
+    // {
+    //     return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}";
+    // }
 
-    public string ShortDescription()
-    {
-      return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{additionalInfo}";
-    }
+    // public string GetFullDetails()
+    // {
+    //   return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{additionalInfo}";
+    // }
+
+    // public string ShortDescription()
+    // {
+    //   return $"Title: {Title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{additionalInfo}";
+    // }
 
 
     

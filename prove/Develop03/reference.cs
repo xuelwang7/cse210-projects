@@ -1,3 +1,5 @@
+
+using System.Collections.Generic;
 public class Reference{
       private string _book;
 
@@ -5,16 +7,20 @@ public class Reference{
 
       private int _verse;
 
-      public Reference(string book,int chapter,int verse)
+      private string _instruction;
+
+      public Reference(string instruction,string book,int chapter,int verse)
       {
             _book = book;
             _chapter = chapter;
             _verse = verse;
+            _instruction = instruction;
       }
 
       public void displayReference()
       {
-            Console.WriteLine($"{_book}:{_chapter},{_verse}");
+            Console.WriteLine($"{_instruction},{_book}:{_chapter},{_verse}");
+            
       }
 
 

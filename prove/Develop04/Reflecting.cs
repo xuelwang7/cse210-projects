@@ -1,8 +1,8 @@
 class Reflecting : Activity {
 
-      public string _intro;
+      private string _intro;
 
-      public string _sentence;
+      private string _sentence;
 
 
 

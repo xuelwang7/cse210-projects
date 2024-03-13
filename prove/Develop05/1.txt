@@ -1,3 +1,0 @@
-simpleGoals:read,read a book,10,False
-EternalGoals:study the scriptures,study for 10 mins,20
-Checklist:attend the temple,attend and perform any ordinance,30,3,500

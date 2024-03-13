@@ -36,7 +36,7 @@ public class List
                         goaltype = Console.ReadLine();
                         Console.WriteLine("what is the amount of points associated with this goal ?  ");
                         goalpoint = int.Parse(Console.ReadLine());
-                        // goalnumber +=1;
+                        
                         Simple simple = new Simple(goalname,goaltype,goalpoint,false);
 
                         MenuList.Add(simple);
